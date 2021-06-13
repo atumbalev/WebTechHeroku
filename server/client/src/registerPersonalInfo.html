@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8" />
+    <title> Register Personal info </title>
+    <link rel='stylesheet' href='styles/personalInfoStyle.css' type='text/css'>
+    <link rel="stylesheet" href="styles/loginAndPersonal.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <main class="container">
+        <div>
+            <img id="logo" src="source/logoOpaTask.jpg">
+            <h3 class="headerTop">Personal info</h3>
+        </div>
+        <div class="row">
+            <img class='profilePicture' src="source/profile.png">
+            <div class="inputGroup inputGroupIcon">
+                <input id="fullName" type="text" placeholder="Full Name" />
+                <div class="inputIcon"><i class="fa fa-user"></i></div>
+            </div>
+            <div class="inputGroup inputGroupIcon">
+                <input id="emailAddress" type="email" placeholder="Email Adress" />
+                <div class="inputIcon"><i class="fa fa-envelope"></i></div>
+            </div>
+            <div class="inputGroup inputGroupIcon">
+                <input id="phone" type="tel" placeholder="Phone number" />
+                <div class="inputIcon"><i class="fa fa-phone"></i></div>
+            </div>
+
+            <div class="inputGroup inputGroupIcon">
+                <input id="infoPer" type="text" placeholder="Something about you" />
+                <div class="inputIcon"><i class="fa fa-heart"></i></div>
+            </div>
+            <div>
+                <button class="button" id="centerButton" onclick="window.location.href='./dashboard.html'">GO TO
+                    DASHBOARD</button>
+            </div>
+        </div>
+        <script src="./scripts/registerPersonalInfo.js"></script>
+    </main>
+</body>
+
+</html>

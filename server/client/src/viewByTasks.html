@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ViewByTasks</title>
+    <link rel="stylesheet" href="styles/mainStyles.css">
+    <link rel="stylesheet" href="styles/viewBy.css">
+    <link rel="stylesheet" href="styles/modal.css">
+</head>
+
+<body>
+    <nav class="toolBarFirst">
+        <div class="navbarLeft">
+            <img src="./source/logoOpaTask.jpg" class="logo">
+            <a class="dashboard" href="dashboard.html">Dashboard</a>
+            <h id="name"></h>
+        </div>
+        <div class="navbarRight">
+            <img id="icon" src="./source/profile.png"></img>
+            <img src="./source/arrowDown.png" class="arrowDown" onclick="show()">
+            <div id="hamburgerMenu" class="arrowButton">
+                <a href="personalInfo.html"><button class="myProfile">My profile</button></a>
+                <a href="index.html"><button class="logOut" onclick="localStorage.clear()">Log out</button></a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-container">
+        <aside class="toolBarSecond">
+            <ul id="collaburatorsList">
+                <li class="contributor">
+                    <img class="contributorProfilePicture" src="./source/profile.png">
+                </li>
+                <li class="contributor" id="addContributor">
+                    <img class="contributorProfilePicture" src="source/addButton.png" alt="add" />
+                </li>
+            </ul>
+        </aside>
+        <div class="projects-form">
+            <div id="issues">
+                <div class="issueContainer">
+                    <h2>Open</h2>
+                    <ul class="issuesList" id="open">
+                    </ul>
+                </div>
+                <div class="issueContainer">
+                    <h2>In Progress</h2>
+                    <ul class="issuesList" id="in-progress"></ul>
+                </div>
+                <div class="issueContainer">
+                    <h2>Resolved</h2>
+                    <ul class="issuesList" id="resolved"></ul>
+                </div>
+                <div class="issueContainer">
+                    <h2>Closed</h2>
+                    <ul class="issuesList" id="closed"></ul>
+                </div>
+            </div>
+            <div class="issuesList" id="deletion-tray"></div>
+            <div class="navigationButtons">
+                <div>
+                    <a href="viewByAssignee.html"><button class="button" id="leftButton">View by assignee</button></a>
+                    <a href="viewByStatus.html"><button class="button" id="rightButton">View by status</button></a>
+                </div>
+                <button class="button" id="centerButton" onclick="openModal()">+ Add task</button>
+            </div>
+        </div>
+
+
+    </main>
+</body>
+
+<div id="contributorsModal" class="modalTwo">
+    <p>Add new collaborator</p>
+    <input id="emailCollaborator" class="headerField" placeholder="Enter email colaborator">
+    <div class="buttons">
+        <button id="cancelAdd" class="button">Cancel</button>
+        <button id="addContributorBtn" class="button">Save</button>
+    </div>
+</div>
+<div id="myModal" class="addModal">
+    <div class="modalContent">
+        <h1 class="header">Adding new task</h1>
+        <input id="task-name" class="headerField" placeholder="Enter name of task">
+        <input id="task-description" class="headerField" placeholder="Enter description">
+        <input id="task-priority" class="headerField" placeholder="Enter priority - Highest or High or Normal or Low or Lowest">
+        <div class="buttons">
+            <button id="cancelTask" class="button">Cancel</button>
+            <button id="addTaskButton" class="button">Save</button>
+        </div>
+    </div>
+</div>
+
+<script src="scripts/main.js"></script>
+<script src="scripts/viewByTasks.js"></script>
+<script src="scripts/dragAndDrop.js"></script>
+<script src="scripts/addContributor.js"></script>
+
+</html>

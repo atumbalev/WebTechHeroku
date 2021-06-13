@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    background: #FFFFFF;
+    height: 93vh;
+}
+
+.main-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+.toolBarFirst {
+    width: 100%;
+    height: 7vh;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(107, 201, 110, 1) 100%);
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbarLeft {
+    justify-content: center;
+    height: 100%;
+    display: flex;
+}
+
+.navbarRight {
+    display: flex;
+    margin-right: 3rem;
+}
+
+.logo {
+    width: 7vh;
+    height: 7vh;
+}
+
+.myProfile {
+    width: 90px;
+    height: 30px;
+    background-color: rgba(198, 231, 218);
+    display: flex;
+    text-align: center;
+    align-self: center;
+    justify-content: center;
+}
+
+.logOut {
+    width: 90px;
+    height: 30px;
+    background-color: rgb(198, 231, 218);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.arrowDown {
+    width: 28px;
+    height: 33px;
+    margin: auto 1rem;
+}
+
+.arrowButton {
+    display: none;
+    z-index: 1;
+}
+
+#hamburgerMenu {
+    margin-top: 52px;
+    margin-left: -73px;
+}
+
+#icon {
+    width: 3rem;
+    height: 3rem;
+    background: #FFFFFF;
+    margin: auto;
+    border-radius: 100%;
+}
+
+.toolBarSecond {
+    display: flex;
+    width: 7vh;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(107, 201, 110, 1) 100%);
+}
+
+.dashboard {
+    margin: auto 1rem;
+    margin-left: 3rem;
+    font-size: 3rem;
+    text-align: center;
+    color: #000000;
+    font-family: "Niconne";
+    font-style: italic;
+    font-weight: 700;
+    text-shadow: 3px 3px 0px #fcedd8, 4px 4px 0px #efa032, 5px 5px 0px #017e7f;
+}
+
+.projects-form {
+    height: 80%;
+    width: 80%;
+    margin: auto;
+    max-width: 75rem;
+}
+
+.button {
+    display: inline-block;
+    padding: 0.3em 1.2em;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 1em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Niconne', sans-serif;
+    font-weight: 500;
+    font-style: bold;
+    color: white;
+    background-color: #048352;
+    text-align: center;
+    transition: all 0.2s;
+}
+
+.button:hover {
+    background-color: #09c87f;
+}
+
+#collaburatorsList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.contributor {
+    width: 100%;
+    display: flex;
+    margin: 1rem auto;
+    justify-content: center;
+}
+
+.contributorProfilePicture {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}

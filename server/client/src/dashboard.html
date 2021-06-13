@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles/dashboard.css">
+    <link rel="stylesheet" href="styles/mainStyles.css">
+    <link rel="stylesheet" href="styles/modal.css">
+</head>
+
+<body>
+
+    <nav class="toolBarFirst">
+        <div class="navbarLeft">
+            <img src="./source/logoOpaTask.jpg" class="logo">
+            <h class="dashboard">Dashboard</h>
+
+        </div>
+        <div class="navbarRight">
+            <img id="icon"></img>
+            <img src="./source/arrowDown.png" class="arrowDown" onclick="show()">
+            <div id="hamburgerMenu" class="arrowButton">
+                <a href="personalInfo.html"><button class="myProfile">My profile</button></a>
+                <a href="index.html"><button class="logOut" onclick="localStorage.clear()">Log out</button></a>
+            </div>
+        </div>
+
+    </nav>
+
+    <main class="main-container">
+        <aside class="toolBarSecond"> </aside>
+        <div class="projects-form">
+            <ul id="projects-container">
+                <li id="add">
+                    <button class="add-project" onclick="openModal()">+</button>
+                </li>
+            </ul>
+
+        </div>
+
+    </main>
+    <div id="myModal" class="addModal">
+        <div class="modalContent">
+            <h1 class="header">Add new project</h1>
+            <input id="projectName" class="headerField" placeholder="Enter name project">
+            <input id="projectDescription" class="headerField" placeholder="Enter description">
+            <div class="buttons">
+                <button id="deleteProject" class="button">Cancel</button>
+                <button id="done" class="button">Save</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./scripts/dashboard.js"></script>
+    <script src="./scripts/main.js"></script>
+    <script src="./scripts/login.js"></script>
+</body>
+
+</html>

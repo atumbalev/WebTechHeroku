@@ -1,0 +1,235 @@
+#taskTable {
+    width: 100%;
+    height: 100%;
+    left: 10%;
+    display: flex;
+    align-content: flex-start;
+    background-color: lightgreen;
+    list-style-type: none;
+    display: grid;
+    border-radius: 1em;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 20;
+    row-gap: 0%
+}
+
+.background {
+    width: 1389px;
+    height: 550px;
+    margin-left: 100px;
+    margin-top: -660px;
+    background: rgba(0, 250, 154, 0.62);
+}
+
+#name {
+    width: 96px;
+    height: 42px;
+    left: 250px;
+    top: 14px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 33px;
+    line-height: 42px;
+    color: #000000;
+}
+
+thead {
+    width: 100%;
+}
+
+tr {
+    display: flex;
+    width: 100%;
+}
+
+th {
+    width: 100%;
+    height: 2rem;
+    text-align: center;
+    background: #09C87F;
+    border: solid black 1px;
+}
+
+td {
+    width: 100%;
+    height: 2rem;
+    text-align: center;
+    background: white;
+    border: solid black 1px;
+}
+
+#status5 {
+    display: flex;
+    width: 80%;
+    height: 40px;
+    background: #09C87F;
+}
+
+.addTask {
+    width: 200px;
+    height: 50px;
+    margin-left: 690px;
+    margin-top: 36px;
+    background: #09C87F;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+}
+
+.status {
+    width: 100%;
+    height: 2rem;
+    background: #09C87F;
+}
+
+a,
+a:hover,
+a:visited,
+a:active {
+    color: inherit;
+    text-decoration: none;
+}
+
+.issueContainer {
+    height: 100%;
+    margin: 0 auto;
+    width: 23%;
+    display: flex;
+    font-style: italic;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(9, 200, 127, 1);
+}
+
+.issuesList {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(233, 253, 204);
+    list-style: none;
+    margin: 0;
+    padding: .5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+}
+
+#issues {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.issue {
+    width: 90%;
+    margin: .5rem;
+    border: 1px solid black;
+    border-radius: .25rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.issue-title {
+    align-self: center;
+    margin: .5rem 0;
+    color: #436C81;
+    word-wrap: break-word;
+    display: inline-block;
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.issue-description {
+    align-self: center;
+    margin: .1rem 0;
+    color: darkgray;
+    word-wrap: break-word;
+    display: inline-block;
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+    font-style: italic;
+}
+
+.issue.dragging {
+    opacity: .5;
+}
+
+.navigationButtons {
+    margin: 1rem 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#deletion-tray {
+    margin: .2rem;
+    width: 99%;
+    background-color: #ffeded;
+    background-image: url('../source/trash.png');
+    background-repeat: no-repeat;
+    background-size: 5rem;
+    background-position: center;
+    opacity: 0.8;
+    border-radius: .25rem;
+    overflow-y: unset;
+}
+
+.modalTwo {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    justify-content: left;
+    z-index: 1;
+    width: 30%;
+    height: 20%;
+    top: 15%;
+    left: 5%;
+    background-color: rgba(255, 255, 255, 0.74);
+    box-shadow: 0px 4px 4px #000000;
+}
+
+td {
+    display: center;
+}
+
+tr {
+    background-color: white;
+    text-align: center;
+}
+
+.class {
+    text-align: center;
+    font-family: "Niconne";
+    font-style: italic;
+}
+
+#highestSt {
+    background: #F47C7C;
+}
+
+#highSt {
+    background: #eca5a5;
+}
+
+#normalSt {
+    background: #F7F48B;
+}
+
+#lowSt {
+    background: #A1DE93;
+}
+
+#lowestSt {
+    background: #cff5c6;
+}
+
+#descriptionNewColor {
+    background: rgb(244, 252, 243);
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>viewByAssignee</title>
+    <link rel="stylesheet" href="styles/viewBy.css">
+    <link rel="stylesheet" href="styles/mainStyles.css">
+</head>
+
+<body>
+    <nav class="toolBarFirst">
+        <div class="navbarLeft">
+            <img src="./source/logoOpaTask.jpg" class="logo">
+            <a class="dashboard" href="dashboard.html">Dashboard</a>
+            <h id="name"></h>
+        </div>
+        <div class="navbarRight">
+            <img id="icon"></img>
+            <img src="./source/arrowDown.png" class="arrowDown" onclick="show()">
+            <div id="hamburgerMenu" class="arrowButton">
+                <a href="personalInfo.html"><button class="myProfile">My profile</button></a>
+                <a href="index.html"><button class="logOut" onclick="localStorage.clear()">Log out</button></a>
+            </div>
+        </div>
+    </nav>
+    <main class="main-container">
+        <aside class="toolBarSecond">
+            <ul id="collaburatorsList">
+                <li class="contributor" id="addContributor">+</li>
+            </ul>
+        </aside>
+        <div class="projects-form">
+            <table id="taskTable">
+                <thead>
+                    <tr>
+                        <th>viewByTasks name</th>
+                        <th>Description</th>
+                        <th>Assignor</th>
+                        <th>Status</th>
+                        <th>Category</th>
+                    </tr>
+                </thead>
+                <tbody id="tasks">
+
+                </tbody>
+            </table>
+            <a href="viewByStatus.html"><button class="button" id="leftButton">View by status</button></a>
+            <a href="viewByTasks.html"><button class="button" id="rightButton">View by task</button></a>
+        </div>
+        <script src="scripts/main.js "></script>
+        <script src="scripts/viewByAssignee.js "></script>
+</body>
+</main>
+
+</html>
+
+</html>

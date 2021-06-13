@@ -1,0 +1,43 @@
+{
+    "name": "issue-tracker-server",
+    "description": "",
+    "version": "1.0.0",
+    "main": "index.ts",
+    "scripts": {
+        "start": "ts-node index.ts",
+        "db-test": "ts-node src/db/index.ts",
+        "test": "test"
+    },
+    "dependencies": {
+        "@types/mongoose": "^5.11.97",
+        "@types/uuid": "^8.3.0",
+        "bcrypt": "^5.0.1",
+        "body-parser": "^1.19.0",
+        "concurrently": "^6.2.0",
+        "cors": "^2.8.5",
+        "dotenv": "^10.0.0",
+        "ejs": "^3.1.6",
+        "express-session": "^1.17.1",
+        "jsonwebtoken": "^8.5.1",
+        "lodash": "^4.17.21",
+        "mongoose": "^5.12.13",
+        "multer": "^1.4.2",
+        "multer-gridfs-storage": "^4.2.0",
+        "ts-node-dev": "^1.1.6",
+        "types": "^0.1.1",
+        "uuid": "^8.3.2"
+    },
+    "devDependencies": {
+        "@types/bcrypt": "^3.0.1",
+        "@types/cors": "^2.8.10",
+        "@types/express": "^4.17.12",
+        "@types/jsonwebtoken": "^8.5.1",
+        "@types/multer-gridfs-storage": "^4.0.2",
+        "@types/node": "^15.6.1",
+        "express": "^4.17.1",
+        "node-env-run": "^4.0.2",
+        "nodemon": "^2.0.7",
+        "ts-node": "^9.1.1",
+        "typescript": "^4.3.2"
+    }
+}

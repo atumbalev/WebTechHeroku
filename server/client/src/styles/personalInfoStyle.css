@@ -1,0 +1,143 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 40em;
+    display: flexbox;
+    margin: 0em auto;
+    padding: 1em 3em 2em 3em;
+    background-color: #fff;
+    border-radius: 4.2px;
+    box-shadow: 0px 3px 10px -2px rgba(0, 0, 0, 0.2);
+}
+
+.headerTop {
+    color: black;
+    background-color: #09c87f;
+    display: inline-block;
+    font-style: italic;
+    width: 80%;
+    padding: 14px;
+    align-self: flex-start;
+}
+
+#logo {
+    margin-right: 9px;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    background: #fff;
+}
+
+.profilePicture {
+    width: 10rem;
+    height: 10rem;
+    background: #FFFFFF;
+    border: 2px solid #055536;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+    cursor: pointer;
+    border-radius: 10px;
+    border-radius: 100%;
+}
+
+input {
+    width: 100%;
+    padding: 1em;
+    line-height: 1.4;
+    background-color: #f9f9f9;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+    -webkit-transition: 0.35s ease-in-out;
+    -moz-transition: 0.35s ease-in-out;
+    -o-transition: 0.35s ease-in-out;
+    transition: 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+}
+
+input:focus {
+    outline: 0;
+    border-color: #64ac15;
+}
+
+.inputGroup {
+    margin-bottom: 1em;
+    zoom: 1;
+}
+
+.row {
+    zoom: 1;
+}
+
+.inputGroup:before,
+.inputGroup:after {
+    content: "";
+    display: table;
+}
+
+.inputGroup:after {
+    clear: both;
+}
+
+.inputGroupIcon {
+    position: relative;
+}
+
+.inputGroupIcon input {
+    padding-left: 4.4em;
+}
+
+.inputGroupIcon .inputIcon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3.4em;
+    height: 3.4em;
+    line-height: 3.4em;
+    text-align: center;
+    pointer-events: none;
+}
+
+.inputGroupIcon .inputIcon:after {
+    position: absolute;
+    top: 0.6em;
+    bottom: 0.6em;
+    left: 3.4em;
+    display: block;
+    border-right: 1px solid #e5e5e5;
+    content: "";
+    -webkit-transition: 0.35s ease-in-out;
+    -moz-transition: 0.35s ease-in-out;
+    -o-transition: 0.35s ease-in-out;
+    transition: 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+}
+
+.inputGroupIcon .inputIcon i {
+    -webkit-transition: 0.35s ease-in-out;
+    -moz-transition: 0.35s ease-in-out;
+    -o-transition: 0.35s ease-in-out;
+    transition: 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+}
+
+#rightButton {
+    float: right;
+    margin-right: 8em;
+}
+
+#leftButton {
+    float: left;
+    margin-left: 8em;
+}
+
+#centerButton {
+    float: left;
+    margin-left: 35%;
+    margin-right: 30%;
+}

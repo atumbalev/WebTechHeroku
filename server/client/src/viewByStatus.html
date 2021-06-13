@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ViewByStatus</title>
+    <link rel="stylesheet" href="styles/viewBy.css">
+    <link rel="stylesheet" href="styles/mainStyles.css">
+</head>
+
+<body>
+    <nav class="toolBarFirst">
+        <div class="navbarLeft">
+            <img src="./source/logoOpaTask.jpg" class="logo">
+            <a class="dashboard" href="dashboard.html">Dashboard</a>
+            <h id="name"></h>
+        </div>
+        <div class="navbarRight">
+            <img id="icon"></img>
+            <img src="./source/arrowDown.png" class="arrowDown" onclick="show()">
+            <div id="hamburgerMenu" class="arrowButton">
+                <a href="personalInfo.html"><button class="myProfile">My profile</button></a>
+                <a href="index.html"><button class="logOut" onclick="localStorage.clear()">Log out</button></a>
+            </div>
+        </div>
+    </nav>
+    <main class="main-container">
+        <aside class="toolBarSecond">
+            <ul id="collaburatorsList">
+                <li class="contributor" id="addContributor">+</li>
+            </ul>
+        </aside>
+        <div class="projects-form">
+
+            <table id="taskTable">
+                <thead>
+                    <tr id="descriptionNewColor">
+                        <th class="table-header">Task Name</th>
+                        <th class="table-header">Description</th>
+                        <th class="table-header">Assignor</th>
+                        <th class="table-header">Category</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body">
+                    <tr id="highest">
+                        <td colspan="4" class="status" id="highestSt">Highest</td>
+                    </tr>
+                    <tr id="high">
+                        <td colspan="4" class="status" id="highSt">High</td>
+                    </tr>
+                    <tr id="normal">
+                        <td colspan="4" class="status" id="normalSt">Normal</td>
+                    </tr>
+                    <tr id="low">
+                        <td colspan="4" class="status" id="lowSt">Low</td>
+                    </tr>
+                    <tr id="lowes">
+                        <td colspan="4" class="status" id="lowestSt">Lowest</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <a href="viewByAssignee.html"><button class="button" id = "leftButton">View by assignee</button></a>
+            <a href="viewByTasks.html"><button class="button" id="rightButton" >View by task</button></a>
+
+        </div>
+    </main>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/viewByStatus.js"></script>
+    <script src="scripts/login.js"></script>
+</body>
